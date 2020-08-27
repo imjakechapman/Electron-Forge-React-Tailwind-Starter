@@ -1,0 +1,75 @@
+{
+  "name": "electron-forge-react-starter",
+  "version": "0.0.1",
+  "productName": "ElectronStarter",
+  "productDescription": "Simple Electron Forge + React + TypeScript + Tailwind starter",
+  "description": "Simple Electron Forge + React + TypeScript + Tailwind starter",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "make:icons": "electron-icon-builder --input=./assets/app-icon.png --output=./assets",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts ./src"
+  },
+  "keywords": [
+    "electron",
+    "notes",
+    "react"
+  ],
+  "author": {
+    "name": "Jake Chapman",
+    "email": "jake@imjakechapman.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": "forge.config.js"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.52",
+    "@electron-forge/maker-deb": "6.0.0-beta.52",
+    "@electron-forge/maker-rpm": "6.0.0-beta.52",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.52",
+    "@electron-forge/maker-zip": "6.0.0-beta.52",
+    "@electron-forge/plugin-webpack": "6.0.0-beta.52",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "autoprefixer": "^9.8.6",
+    "css-loader": "^3.0.0",
+    "electron": "9.2.1",
+    "electron-icon-builder": "^1.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "fork-ts-checker-webpack-plugin": "^3.1.1",
+    "node-loader": "^0.6.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.3",
+    "prettier": "^2.0.5",
+    "react-hot-loader": "^4.12.21",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.0"
+  },
+  "dependencies": {
+    "@tailwindcss/ui": "^0.5.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "keytar": "^6.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "tailwindcss": "^1.7.3"
+  }
+}
